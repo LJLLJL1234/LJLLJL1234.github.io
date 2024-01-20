@@ -1,6 +1,8 @@
 header
     height: 450px
-    background: grey
+    background: url('../img/header_bg.jpg') center center
+    background-size: cover
+    //background: grey
 
     nav
         float: right
@@ -10,14 +12,13 @@ header
             display: inline-block
             margin-left: 20px
 
-            color: rgba(0,0,0,0.7)
-            font:
-                size: 14px
-                weight: 700
-            text-transform: uppercase
+            //color: rgba(0,0,0,0.5)
+            color: white
+            @extend %small-bold
 
             &:hover
-                color: rgba(0,0,0,1)
+                //color: rgba(0,0,0,0.3)
+                color: grey
         
     h1
         text-align: center
@@ -30,6 +31,18 @@ header
         margin-bottom: 20px
         clear: both
         padding-top: 100px
+        margin-bottom: 10px
+        line-height: 1
+
+        span
+            display: inline-block
+            padding: 0.3em  0.5em 0.1em
+            border: white solid 10px
     
     .kicker
         text-align: center
+        font:
+            weight: 700
+        text-transform: uppercase
+        letter-spacing: 0.05em
+        color: white
