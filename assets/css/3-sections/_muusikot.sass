@@ -8,40 +8,31 @@
     h2
         font-size: 3vw
 
-    @media (max-width: 600px)
-        font-size: 16px
-
-        h2
-            font-size: 4vw
-
 
 .muusikko-div
     width: 70%
     display: flex
+    //flex-direction: row
+    flex-wrap: wrap
     //margin-left: 50px
     margin: 0 auto
     margin-bottom: 50px
-    font-size: 1vw
+    font-size: clamp(1rem, 3vw, 2rem)
+    //font_size: 16px
 
-
-
-    img
-        width: 70%
-        margin-right: 10px
-
+    .muusikko-img
+        flex: 10%
+        margin-right: 20px
+        //max-width: 200px
     .muusikko-text
-        flex-grow: 1
-        width: 70%
-        min-width: 700px
-        margin: 0 auto
-        margin-bottom: 50px
-        font-size: 1vw
+        flex: 25%
+        //margin-right: 10px
+        //order: 1
 
-        h2
-            font-size: 3vw
+    @media (max-width: 600px)
+        .muusikko-img
+            flex: 25%
+        .muusikko-text
+            flex: 100%
 
-        @media (max-width: 600px)
-            font-size: 16px
-
-            h2
-                font-size: 4vw
+    
